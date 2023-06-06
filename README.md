@@ -32,7 +32,7 @@ Choose the version corresponding to your Angular version:
 
  | Angular | @ngx-translate/core | ngx-translate-multi-http-loader |
  | ------- | ------------------- | ------------------------------- |
- | 16      | 16.x+               | 16.x+                           |
+ | 16      | 16.x+               | 15.x+                           |
  | 15      | 15.x+               | 9.x+                            |
  | 14      | 14.x+               | 8.x+                            |
  | 13      | 14.x+               | 7.x+                            |
