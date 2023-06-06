@@ -20,10 +20,12 @@ Get the complete changelog here: https://github.com/rbalet/ngx-translate-multi-h
 
 We assume that you already installed [ngx-translate](https://github.com/ngx-translate/core).
 
-Now you need to install the npm module for `MultiTranslateHttpLoader`:
+Now you need to install the npm module for `MultiTranslateHttpLoader`:  
+[deepmerge-ts](https://www.npmjs.com/package/deepmerge-ts) may also need to be installed _should be done automatically though_
 
 ```sh
-npm install ngx-translate-multi-http-loader --save
+npm install ngx-translate-multi-http-loader
+npm install deepmerge-ts
 ```
 
 Choose the version corresponding to your Angular version:
