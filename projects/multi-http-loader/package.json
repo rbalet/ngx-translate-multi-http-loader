@@ -1,8 +1,11 @@
 {
   "name": "ngx-translate-multi-http-loader",
-  "version": "16.0.0",
+  "version": "16.0.1",
   "license": "MIT",
-  "author": "Raphael Balet",
+  "author": {
+    "name": "Raphaël Balet",
+    "email": "raphael.balet@outlook.com"
+  },
   "maintainers": [
     "raphael.balet@outlook.com"
   ],
@@ -20,7 +23,7 @@
     "url": "https://github.com/rbalet/ngx-translate-multi-http-loader"
   },
   "dependencies": {
-    "tslib": "^2.5.3"
+    "tslib": "^2.6.0"
   },
   "peerDependencies": {
     "@angular/common": ">=13.0.0",
