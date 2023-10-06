@@ -1,5 +1,6 @@
 # @ngx-translate/multi-http-loader [![npm version](https://img.shields.io/npm/v/ngx-translate-multi-http-loader.svg)](https://www.npmjs.com/package/ngx-translate-multi-http-loader)
 
+[![BuyMeACoffee](https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png)](https://www.buymeacoffee.com/widness)
 
 A loader for [ngx-translate](https://github.com/ngx-translate/core) that loads translations using http.
 
