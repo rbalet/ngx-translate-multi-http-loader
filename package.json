@@ -26,6 +26,7 @@
     "@angular-eslint/template-parser": "17.1.0",
     "@angular/cli": "^17.0.2",
     "@angular/compiler-cli": "^17.0.4",
+    "@semantic-release/apm-config": "^9.0.1",
     "@types/jasmine": "^5.1.3",
     "@types/jasminewd2": "^2.0.13",
     "@types/node": "^20.9.3",
@@ -41,5 +42,8 @@
     "karma-jasmine-html-reporter": "^2.1.0",
     "ng-packagr": "^17.0.2",
     "typescript": "5.2.2"
+  },
+  "release": {
+    "extends": "@semantic-release/apm-config"
   }
 }
