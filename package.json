@@ -7,6 +7,8 @@
     "raphael.balet@outlook.com"
   ],
   "scripts": {
+    "build": "ng build ngx-translate-multi-http-loader --configuration production",
+    "test:ci": "ng test ngx-translate-multi-http-loader --watch=false --code-coverage --no-progress --browsers=ChromeHeadless",
     "publish": "ng build ngx-translate-multi-http-loader --configuration production && npm publish ./dist/ngx-translate-multi-http-loader"
   },
   "dependencies": {
