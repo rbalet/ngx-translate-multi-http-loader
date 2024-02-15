@@ -3,6 +3,7 @@
 A loader for [ngx-translate](https://github.com/ngx-translate/core) that loads translations using http.
 
 [![npm version](https://img.shields.io/npm/v/ngx-translate-multi-http-loader.svg)](https://www.npmjs.com/package/ngx-translate-multi-http-loader) ![NPM](https://img.shields.io/npm/l/ngx-translate-multi-http-loader) ![npm bundle size](https://img.shields.io/bundlephobia/min/ngx-translate-multi-http-loader)
+![npm](https://img.shields.io/npm/dm/ngx-translate-multi-http-loader)
 
 Angular 14 example: https://stackblitz.com/edit/ngx-translate-multi-http-loader-sample-2clau3?file=src/app/app.module.ts
 
