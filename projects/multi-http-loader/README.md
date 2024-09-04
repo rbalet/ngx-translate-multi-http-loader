@@ -57,7 +57,7 @@ import {AppComponent} from './app';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(_httpBackend: HttpBackend) {
-    return new MultiTranslateHttpLoader(_httpBackend, ['/assets/i18n/core/', '/assets/i18n/vendors/']);
+    return new MultiTranslateHttpLoader(_httpBackend, ['/assets/i18n/core/', '/assets/i18n/vendors/']); // /i18n/core/ on angular >= v18 with the new public logic
 }
 
 @NgModule({
