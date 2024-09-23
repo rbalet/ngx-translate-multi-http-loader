@@ -1,6 +1,6 @@
 {
   "name": "ngx-translate-multi-http-loader",
-  "version": "18.2.0",
+  "version": "18.3.0",
   "license": "MIT",
   "author": "Raphael Balet",
   "maintainers": [
@@ -47,7 +47,7 @@
     "karma-jasmine": "^5.1.0",
     "karma-jasmine-html-reporter": "^2.1.0",
     "ng-packagr": "^18.1.0",
-    "typescript": "5.4.5"
+    "typescript": "^5.5.4"
   },
   "release": {
     "extends": "@semantic-release/apm-config"
