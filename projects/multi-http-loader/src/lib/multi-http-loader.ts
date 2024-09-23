@@ -19,12 +19,13 @@ export class MultiTranslateHttpLoader implements TranslateLoader {
   public getTranslation(lang: string): Observable<any> {
     const requests: Observable<Object | {}>[] = this._resourcesPrefix.map((resource) => {
       let path: string
-      if (resource.prefix) path = `${resource.prefix}${lang}${resource.suffix || '.json'}`
-      else path = `${resource}${lang}.json`
+
+      if (typeof resource === 'string') path = `${resource}${lang}.json`
+      else path = `${resource.prefix}${lang}${resource.suffix || '.json'}`
 
       return new HttpClient(this._handler).get(path).pipe(
         catchError((res) => {
-          if (!resource.optional) {
+          if (typeof resource !== 'string' && !resource.optional) {
             console.group()
             console.error('Something went wrong for the following translation file:', path)
             console.error(res)

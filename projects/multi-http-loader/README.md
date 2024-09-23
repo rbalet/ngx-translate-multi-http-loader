@@ -35,8 +35,8 @@ Choose the version corresponding to your Angular version:
 
  | Angular | @ngx-translate/core | ngx-translate-multi-http-loader |
  | ------- | ------------------- | ------------------------------- |
- | 16      | 16.x+               | 15.x+                           |
- | 15      | 15.x+               | 9.x+                            |
+ | >= 16   | 15.x+               | >= 15.x+                        |
+ | 15      | 14.x+               | 9.x+                            |
  | 14      | 14.x+               | 8.x+                            |
  | 13      | 14.x+               | 7.x+                            |
  | 6       | 10.x+               | 1.x+                            |
@@ -57,7 +57,7 @@ import {AppComponent} from './app';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(_httpBackend: HttpBackend) {
-    return new MultiTranslateHttpLoader(_httpBackend, ['/assets/i18n/core/', '/assets/i18n/vendors/']);
+    return new MultiTranslateHttpLoader(_httpBackend, ['/assets/i18n/core/', '/assets/i18n/vendors/']); // /i18n/core/ on angular >= v18 with the new public logic
 }
 
 @NgModule({
