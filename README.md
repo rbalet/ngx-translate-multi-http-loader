@@ -23,12 +23,10 @@ Get the complete changelog here: https://github.com/rbalet/ngx-translate-multi-h
 
 We assume that you already installed [ngx-translate](https://github.com/ngx-translate/core).
 
-Now you need to install the npm module for `MultiTranslateHttpLoader`:  
-[deepmerge-ts](https://www.npmjs.com/package/deepmerge-ts) may also need to be installed _should be done automatically though_
+Now you need to install the npm module for `MultiTranslateHttpLoader`:
 
 ```sh
 npm install ngx-translate-multi-http-loader
-npm install deepmerge-ts
 ```
 
 Choose the version corresponding to your Angular version:
@@ -102,22 +100,14 @@ export function HttpLoaderFactory(_httpBackend: HttpBackend) {
 }
 ```
 
-The loader will merge all translation files from the server using [deepmerge-ts](https://www.npmjs.com/package/deepmerge-ts).
+The loader will merge all translation files from the server
 
 
 ## Possible error & Bugfix
-### Can't resolve 'deepmerge-ts'
-1. run `npm i deepmerge-ts`
-
-This is due to some version of npm not being able to download peerDependencies properly.
-
-I decided to **not** move it under dependencies since it's considered to be a bad practice.
 
 ### values.at is not a function
 1. Install `core-js`
 2. In `polyfills.ts`, add `import 'core-js/modules/es.array.at'`
-
-`deepmerge-ts@5` uses `Array.at`, which is [not supported](https://caniuse.com/?search=array.at) in _not so_ old versions of Safari `< 15.4`.
 
 
 ## Authors and acknowledgment
