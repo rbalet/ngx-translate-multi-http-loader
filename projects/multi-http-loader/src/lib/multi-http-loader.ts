@@ -3,7 +3,7 @@ import { TranslateLoader } from '@ngx-translate/core'
 import { forkJoin, Observable, of } from 'rxjs'
 import { catchError, map } from 'rxjs/operators'
 
-export interface ITranslationResource {
+export interface TranslationResource {
   prefix: string
   suffix?: string
   optional?: boolean
@@ -12,7 +12,7 @@ export interface ITranslationResource {
 export class MultiTranslateHttpLoader implements TranslateLoader {
   constructor(
     private _handler: HttpBackend,
-    private _resourcesPrefix: string[] | ITranslationResource[],
+    private _resourcesPrefix: string[] | TranslationResource[],
   ) {}
 
   public getTranslation(lang: string): Observable<any> {

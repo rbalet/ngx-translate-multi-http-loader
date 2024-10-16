@@ -75,7 +75,7 @@ export function HttpLoaderFactory(_httpBackend: HttpBackend) {
 export class AppModule { }
 ```
 
-The `MultiTranslateHttpLoader` takes a list of `string[]` or `ITranslationResource[]`. 
+The `MultiTranslateHttpLoader` takes a list of `string[]` or `TranslationResource[]`. 
 
 ### String[]
 For example `['/assets/i18n/core/', '/assets/i18n/vendors/']`,   
