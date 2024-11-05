@@ -9,7 +9,8 @@
   "scripts": {
     "build": "ng build ngx-translate-multi-http-loader --configuration production",
     "test:ci": "ng test ngx-translate-multi-http-loader --watch=false --code-coverage --no-progress --browsers=ChromeHeadless",
-    "publish": "ng build ngx-translate-multi-http-loader --configuration production && npm publish ./dist/ngx-translate-multi-http-loader",
+    "publish": "ng build ngx-translate-multi-http-loader --configuration production && npm run copy-files && npm publish ./dist/ngx-translate-multi-http-loader",
+    "copy-files": "cp README.md dist/ngx-translate-multi-http-loader && cp LICENSE dist/ngx-translate-multi-http-loader",
     "prepare": "husky"
   },
   "dependencies": {
