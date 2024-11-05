@@ -15,6 +15,9 @@ Get the complete changelog here: https://github.com/rbalet/ngx-translate-multi-h
 * [Usage](#usage)
 * [Error & BugFix](#possible-error--bugfix)
 
+## breaking change: v19.0.0
+* Uses `mergeDeep` from `@ngx-translate/core@16` making it's `v16` mandatory
+
 ## breaking change: v9.0.0
 * This library is now using `httpBackend` instead of the `httpClient`, to avoid being delayed by interceptor, which was creating errors while loading.
 * From the v9, the library will only be using a list of `string[]` so `prefix` & `suffix` aren't needed anymore and `.json` gonna be the default suffix.
@@ -33,6 +36,7 @@ Choose the version corresponding to your Angular version:
 
  | Angular | @ngx-translate/core | ngx-translate-multi-http-loader |
  | ------- | ------------------- | ------------------------------- |
+ | >= 16   | 16.x+               | >= 19.x+                        |
  | >= 16   | 15.x+               | >= 15.x+                        |
  | 15      | 14.x+               | 9.x+                            |
  | 14      | 14.x+               | 8.x+                            |
