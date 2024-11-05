@@ -39,9 +39,4 @@ export class MultiTranslateHttpLoader implements TranslateLoader {
       map((response) => response.reduce((acc, curr) => mergeDeep(acc, curr), {})),
     )
   }
-
-  // @ToDo: Use it from ngx-translate once it gets exported: https://github.com/rbalet/ngx-translate-multi-http-loader/issues/35
-  isObject(item: any): boolean {
-    return item && typeof item === 'object' && !Array.isArray(item)
-  }
 }
