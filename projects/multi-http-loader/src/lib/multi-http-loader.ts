@@ -20,7 +20,7 @@ export class MultiTranslateHttpLoader implements TranslateLoader {
       let path: string
 
       if (typeof resource === 'string') path = `${resource}${lang}.json`
-      else path = `${resource.prefix}${lang}${resource.suffix || '.json'}`
+      else path = `${resource.prefix}${lang}${resource.suffix ?? '.json'}`
 
       return new HttpClient(this._handler).get(path).pipe(
         catchError((res) => {
