@@ -12,7 +12,7 @@ export interface TranslationResource {
 export class MultiTranslateHttpLoader implements TranslateLoader {
   constructor(
     private _handler: HttpBackend,
-    private _resourcesPrefix: string[] | TranslationResource[],
+    private _resourcesPrefix: (string | TranslationResource)[],
   ) {}
 
   public getTranslation(lang: string): Observable<any> {
