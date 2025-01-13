@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
+      - run: npm i
       # - name: lint
       #   run: npm run lint
       # - run: npm run build
@@ -47,7 +47,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
+      - run: npm i
       - run: npm run build
       - name: release
         run: cd dist/ngx-translate-multi-http-loader && npx semantic-release --branches master
