@@ -1,6 +1,6 @@
 {
   "name": "ngx-translate-multi-http-loader",
-  "version": "19.0.2",
+  "version": "19.0.3",
   "license": "MIT",
   "author": {
     "name": "Raphaël Balet",
@@ -29,6 +29,6 @@
     "@angular/common": ">=13.0.0",
     "@angular/core": ">=13.0.0",
     "@ngx-translate/core": ">=16.0.3",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.2"
   }
 }
