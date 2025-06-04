@@ -8,16 +8,25 @@
     "declaration": false,
     "strict": true,
     "module": "ES2022",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["ES2022", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
     "paths": {
-      "ngx-mat-input-tel": ["dist/ngx-mat-input-tel"],
-      "ngx-mat-input-tel/*": ["dist/ngx-mat-input-tel/*"]
+      "ngx-mat-input-tel": [
+        "dist/ngx-mat-input-tel"
+      ],
+      "ngx-mat-input-tel/*": [
+        "dist/ngx-mat-input-tel/*"
+      ]
     }
   },
   "angularCompilerOptions": {
